@@ -1,0 +1,76 @@
+/*-- scss:defaults --*/
+
+$dark-color: #3a1c6f;
+$gradient-dark: #3a1c6f;
+$gradient-light:  #006666;
+$link-color: #2a6f6f;
+$link-visited-color:  #556677;
+$link-hover-color: #3a1c6f;
+$body-color: #164756 ;
+$lab-background:  #e6efdc;
+$background: #e6efdc;
+$highlight-dark: #cc0003;
+$highlight-light: #fad1d1;
+$topic-color:   #EAE4EE;
+$light-teal:   #f0f4f2;
+$highlight-darkest: #660000;
+$cream: #FDFBF7;
+$white: #FFFFFF;
+
+$navbar-bg: $dark-color;
+$navbar-h1: $dark-color;
+$navbar-fg: $cream;
+$footer-bg: $cream;
+
+/*-- scss:rules --*/
+
+a[name]:not([href]){
+    display: block;    
+    position: relative;     
+    top: -100px;
+    visibility: hidden;
+}
+
+
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+.nav-footer-left,
+.nav-footer-right {
+  flex: 0 1 auto !important; /* Allow these to take up only as much space as needed */
+  padding: 5px;
+}
+
+.nav-footer-center {
+  flex: 1; /* Take up the remaining space */
+}
+
+/*-- scss:mixins --*/
+
+/*-- scss:functions --*/
+
+/*-- scss:uses --*/
