@@ -9,8 +9,6 @@ website:
   title: "a11yhood"
   navbar:
     right:
-      - icon: rss
-        href: index.xml
       - text: "Home"
         href: index.qmd
       - text: "News"
@@ -31,8 +29,9 @@ website:
 format:
   html:
     theme:
-      - cosmo
+      - yeti
       - style.scss
+    linkcolor: "#3a1c6f;"
     toc: true
 
 

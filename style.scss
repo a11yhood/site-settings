@@ -1,21 +1,7 @@
 /*-- scss:defaults --*/
 
 $dark-color: #3a1c6f;
-$gradient-dark: #3a1c6f;
-$gradient-light:  #006666;
-$link-color: #2a6f6f;
-$link-visited-color:  #556677;
-$link-hover-color: #3a1c6f;
-$body-color: #164756 ;
-$lab-background:  #e6efdc;
-$background: #e6efdc;
-$highlight-dark: #cc0003;
-$highlight-light: #fad1d1;
-$topic-color:   #EAE4EE;
-$light-teal:   #f0f4f2;
-$highlight-darkest: #660000;
 $cream: #FDFBF7;
-$white: #FFFFFF;
 
 $navbar-bg: $dark-color;
 $navbar-h1: $dark-color;
@@ -30,7 +16,6 @@ a[name]:not([href]){
     top: -100px;
     visibility: hidden;
 }
-
 
 
 a.skip-main {

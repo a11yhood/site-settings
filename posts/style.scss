@@ -1,7 +1,11 @@
 /*-- scss:defaults --*/
+@import "../styles";
 
 /*-- scss:rules --*/
 
+div.listing-categories  div.quarto-category {
+    color: $dark-color !important;
+}
 
 /*-- scss:mixins --*/
 
