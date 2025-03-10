@@ -1,7 +1,0 @@
-format:
-  html:
-    include-in-header:
-      - templates/skiplink.html
-      - templates/access-fixes.html
-    include-before-body:
-      - templates/body.html

@@ -1,16 +1,17 @@
 ---
-title: "About A11yhood.org"
-metadata-files:
-  - _metadata.yml
+title: About
 layout: default
 ---
+# About A11yhood.org
 
 A11yhood.org is a central hub for information about open-source assistive technologies. It serves as a tool for disabled makers, developers, and contributors and their allies and communities to find, use, and contribute to a variety of open-source accessibility projects. 
 
 ## Mission
+
 Our mission is to build capacity, increase the adoption of assistive technologies by users, and provide technical assistance for people with disabilities their communities. 
 
 ## Goals
+
 Our goals are to:
 - Centralize community resources for open-source assistive technologies in a searchable, accessible format.
 - Cultivate accessible, community-driven development of open-source technologies. 
@@ -18,6 +19,7 @@ Our goals are to:
 - Establish a community of learning and support for open-source accessibility solutions.
 
 ## Features 
+
 a11yhood will provide features such as:
 - Centralized repository of software, tutorials, commentary, and reviews.
 - Accessible development support for disabled contributors.
@@ -28,6 +30,7 @@ a11yhood will provide features such as:
 For more information or to contribute, create an account, or subscribe to our blog!
 
 ## Partnerships
+
 A11yhood.org is an an initiative of the Center for Research and Education on Accessible Technology and Experiences ([CREATE](create.uw.edu)). We are proud to partner with the [Center for Accessibility and Open Source](https://caos.org/). 
 
 ## Funding

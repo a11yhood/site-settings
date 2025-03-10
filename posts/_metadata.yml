@@ -1,4 +1,0 @@
-format:
-  html:
-    include-in-header:
-      - ../templates/skiplink.html
