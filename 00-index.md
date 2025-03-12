@@ -5,8 +5,9 @@ title: Home
 layout: default
 description: Accelerating the Adoption of open-Source Assistive Technology 
 nav: false
+permalink: index.html
 ---
-> Accelerating the Adoption of Open Source Assistive Technology
+> <dfn><strong>a11yhood</strong></dfn> Accelerating the Adoption of Open Source Assistive Technology
 
 <figure>
 <img title="a11yhood mockup" alt="A mockup of the a11yhood search functionality we are planning on adding. The website shows a search string titled 'draw smooth lines with a stylus on a digital tablet' and a series of results including a 3d printed wacom stylus grip with 5 stars, a mouse and tablet stabilizer available on github, a cushy pen grip from ravelry and a stroke stabilizer software from github. The user has selected the wacom stylus grip and it highlights skills needed and provides 3d printing instructions" src="images/allyhood.png"/>
