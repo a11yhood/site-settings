@@ -14,12 +14,12 @@ permalink: index.html
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a> <span>{{ post.description }}</span>
     </li>
   {% endfor %}
 </ul>
 
-## An Early <strong>a11yhood</strong> Prototype
+## The <strong>a11yhood</strong> Vision
 
 <figure>
 <img title="a11yhood mockup" alt="A mockup of the a11yhood search functionality we are planning on adding. The website shows a search string titled 'draw smooth lines with a stylus on a digital tablet' and a series of results including a 3d printed wacom stylus grip with 5 stars, a mouse and tablet stabilizer available on github, a cushy pen grip from ravelry and a stroke stabilizer software from github. The user has selected the wacom stylus grip and it highlights skills needed and provides 3d printing instructions" src="images/allyhood.png"/>
