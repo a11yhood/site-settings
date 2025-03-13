@@ -9,7 +9,7 @@ permalink: news.html
   {% for post in site.posts %}
     <li>
     <p>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{post.date}}: <a href="{{ post.url }}">{{ post.title }}</a>
       <span>{{ post.description }}</span>
     </p>
     </li>
