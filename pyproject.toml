@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core >=3.11,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "site_settings"
+authors = [{name = "a11yhood"}]
+readme = "README.md"
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://a11yhood.org/site-settings"

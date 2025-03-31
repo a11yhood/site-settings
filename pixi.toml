@@ -1,0 +1,46 @@
+[project]
+authors = ["tonyfast <tony.fast@gmail.com>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "jekyll-settings"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks.site]
+cmd = """mkdir _includes
+&& mkdir images 
+&& cp src/jekyll-settings/_includes/. _includes
+&& cp src/jekyll-settings/images/. images
+&& cp src/jekyll-settings/404.html .
+&& cp src/jekyll-settings/_config.yml .
+"""
+
+[dependencies]
+python = ">=3.13.2,<3.14"
+
+[feature.jekyll.dependencies]
+c-compiler = ">=1.9.0,<2"
+compilers = ">=1.9.0,<2"
+cxx-compiler = ">=1.9.0,<2"
+ruby = ">=3.4.2,<4"
+
+[feature.jekyll.tasks.setup]
+description = "initialize jekyll and github pages"
+cmd = "bundle install"
+inputs = ["Gemfile"]
+outputs = ["Gemfile.lock"]
+
+[feature.jekyll.tasks.build]
+description = "build assets from jekyll"
+cmd = "bundle exec jekyll build"
+depends-on = ["setup"]
+outputs = ["_site"]
+
+
+[feature.jekyll.tasks.serve]
+description = "serve assets from jekyll"
+cmd = "bundle exec jekyll serve"
+depends-on = ["setup"]
+
+[environments]
+ruby = { features = ["jekyll"]}

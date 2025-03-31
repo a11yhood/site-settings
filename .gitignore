@@ -1,3 +1,9 @@
 /.quarto/
 _site
 .DS_Store
+# pixi environments
+.pixi
+*.egg-info
+.bundle
+_site
+.sass-cache
