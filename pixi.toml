@@ -32,14 +32,14 @@ outputs = ["Gemfile.lock"]
 
 [feature.jekyll.tasks.build]
 description = "build assets from jekyll"
-cmd = "bundle exec jekyll build"
+cmd = "bundle exec jekyll build --baseurl '' "
 depends-on = ["setup"]
 outputs = ["_site"]
 
 
 [feature.jekyll.tasks.serve]
 description = "serve assets from jekyll"
-cmd = "bundle exec jekyll serve"
+cmd = "bundle exec jekyll serve --baseurl '' "
 depends-on = ["setup"]
 
 [environments]

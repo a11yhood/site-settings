@@ -22,7 +22,6 @@ title: A11yhood
 email: caos@googlegroups.com
 description: >- # this means to ignore newlines until "baseurl:"
   Accelerating the Adoption of Open Source Assistive Technology
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  a11yhood
@@ -32,6 +31,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-octicons
+  - jekyll-readme-index
+readme_index:
+  enabled: true
+  with_frontmatter: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
