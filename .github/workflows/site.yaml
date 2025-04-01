@@ -8,6 +8,5 @@ permissions:
   contents: write
 jobs:
   site:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: a11yhood/site-settings/.github/workflows/jekyll.yaml@main
+    uses: a11yhood/site-settings/.github/workflows/jekyll.yaml@main
+    secrets: inherit
