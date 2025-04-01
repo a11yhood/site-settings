@@ -7,6 +7,9 @@ name = "site_settings"
 authors = [{name = "a11yhood"}]
 readme = "README.md"
 dynamic = ["version", "description"]
-
+dependencies = [
+    "pyyaml"
+]
 [project.urls]
 Home = "https://a11yhood.org/site-settings"
+
