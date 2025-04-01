@@ -9,4 +9,5 @@ permissions:
 jobs:
   site:
     uses: a11yhood/site-settings/.github/workflows/jekyll.yaml@main
-    secrets: inherit
+    secrets: 
+      personal_access_token: ${{ secrets.token }}
