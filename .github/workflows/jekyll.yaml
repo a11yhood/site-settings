@@ -1,0 +1,35 @@
+name: a11yhood site
+run-name: build a11yhood site with jekyll
+on: 
+  workflow_call:
+    inputs: {}
+    secrets:
+      personal_access_token:
+        required: true
+
+
+env:
+  GH_TOKEN: ${{ github.token }}
+permissions:
+  contents: write
+jobs:
+  Build-Site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5        
+        with:
+          python-version: "3.13"
+      - run: gh repo clone a11yhood/site-settings
+      - run: pip install ./site-settings
+      - run: python -m site_settings
+      - run: rm -rf site-settings
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"        
+          git add .
+          git commit -m "generated"
+          git checkout -b gh-pages
+          git merge -Xtheirs main
+          git push --force origin gh-pages
