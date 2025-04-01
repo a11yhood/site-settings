@@ -27,5 +27,5 @@ data = {}
 for config in configs:
     data |= yaml.safe_load(config.read_text())
     
-print(data)
+local_config.write_text(yaml.safe_dump(data))
 
