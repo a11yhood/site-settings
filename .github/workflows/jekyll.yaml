@@ -24,6 +24,7 @@ jobs:
       - run: gh repo clone a11yhood/site-settings
       - run: pip install ./site-settings
       - run: python -m site_settings
+      - uses: actions/download-artifact@v4
       - run: rm -rf site-settings
       - run: |
           git config user.name "github-actions[bot]"
