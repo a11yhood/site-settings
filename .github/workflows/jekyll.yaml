@@ -26,7 +26,7 @@ jobs:
       - run: python -m site_settings
       - uses: actions/download-artifact@v4
         with:
-          path: /
+          merge-multiple: true
       - run: rm -rf site-settings
       - run: |
           git config user.name "github-actions[bot]"
