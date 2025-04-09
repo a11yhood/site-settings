@@ -1,5 +1,14 @@
+baseurl: site-settings
+description: a consistent theme for the a11yhood project
+email: caos@googlegroups.com
+github_username: a11yhood
+plugins:
+- jekyll-feed
+- jekyll-octicons
+- jekyll-readme-index
+readme_index:
+  enabled: true
+  with_frontmatter: true
+theme: minima
 title: A11yhood site Settings
-description: >- # this means to ignore newlines until "baseurl:"
-  a consistent theme for the a11yhood project
-baseurl: "site-settings" # the subpath of your site, e.g. /blog
-url: "https://a11yhood.org/site-settings" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://a11yhood.org/site-settings
